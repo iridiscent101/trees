@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use App\Enums\PermissionName;
 use App\Enums\RoleName;
-use App\Models\User;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -53,9 +52,6 @@ class RolePermissionSeeder extends Seeder
                 array_map(fn (PermissionName $permission) => $permission->value, $permissions),
             );
         }
-
-        User::where('email', 'admin@test.com')->first()?->syncRoles([RoleName::Administrator->value]);
-        User::where('email', 'user@test.com')->first()?->syncRoles([RoleName::User->value]);
 
         app(PermissionRegistrar::class)->forgetCachedPermissions();
     }
