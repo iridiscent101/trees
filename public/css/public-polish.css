@@ -1,0 +1,75 @@
+:root {
+    --ui-green-950: #073f2e;
+    --ui-green-800: #086241;
+    --ui-green-700: #0d754a;
+    --ui-green-100: #e8f2e9;
+    --ui-surface: #ffffff;
+    --ui-canvas: #f7f9f7;
+    --ui-border: #dfe6e1;
+    --ui-text: #17241e;
+    --ui-muted: #617068;
+    --ui-radius: 10px;
+    --ui-shadow: 0 3px 12px rgba(18, 53, 36, .07);
+}
+
+html { background: var(--ui-canvas); }
+body { color: var(--ui-text); background: var(--ui-canvas); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+::selection { color: #fff; background: var(--ui-green-700); }
+a, button { transition: color .18s ease, background-color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid rgba(224, 190, 47, .48); outline-offset: 2px; }
+
+.panel, .stats article, .tree-card, .filters, .cta { border-color: var(--ui-border) !important; border-radius: var(--ui-radius) !important; box-shadow: var(--ui-shadow) !important; }
+.section-heading { border-bottom: 1px solid #edf1ee; }
+.section-heading h2 { letter-spacing: -.015em; }
+.button:hover, .apply-button:hover, .primary-button:hover { transform: translateY(-1px); box-shadow: 0 5px 13px rgba(3, 81, 49, .18); }
+.profile-link:hover, .tree-details a:hover { border-color: var(--ui-green-700); color: var(--ui-green-800); background: var(--ui-green-100); }
+
+/* Shared navigation feedback */
+.public-navigation a { position: relative; border-bottom-color: transparent !important; }
+.public-navigation a::after { content: ""; position: absolute; right: 50%; bottom: 0; left: 50%; height: 3px; background: #f2e766; transition: right .2s ease, left .2s ease; }
+.public-navigation a:hover::after, .public-navigation a.active::after { right: 0; left: 0; }
+
+/* Dashboard and directory cards */
+.stats article, .tree-card, .benefit-grid article, .partners article { transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background-color .2s ease; }
+.stats article:hover { transform: translateY(-3px); border-color: #cddcd1 !important; box-shadow: 0 9px 22px rgba(18,53,36,.12) !important; }
+.stat-icon { transition: color .2s ease, background-color .2s ease, transform .2s ease; }
+.stats article:hover .stat-icon { color: #fff; background: var(--ui-green-700); transform: scale(1.05); }
+.tree-card:hover { transform: translateY(-4px); border-color: #c5d8ca !important; box-shadow: 0 10px 24px rgba(18,53,36,.13) !important; }
+.tree-image-placeholder, .tree-photo-placeholder { transition: transform .22s ease, filter .22s ease; transform-origin: center; }
+.tree-card:hover .tree-image-placeholder, .tree-card:hover .tree-photo-placeholder { transform: scale(1.025); filter: saturate(1.05); }
+.tree-card .tree-info, .tree-card .tree-details { position: relative; z-index: 1; background: #fff; }
+.tree-grid.list-view .tree-card, .tree-grid:not(.list-view) .tree-card { animation: result-in .2s ease both; }
+@keyframes result-in { from { opacity: .55; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Map interaction feedback */
+.marker { transition: transform .17s ease, box-shadow .17s ease, filter .17s ease; }
+.marker:hover { z-index: 8; transform: translate(-50%,-50%) scale(1.16); filter: saturate(1.12); box-shadow: 0 5px 12px rgba(0,44,25,.32); }
+.marker.active { animation: marker-pulse .7s ease-out; }
+@keyframes marker-pulse { 0% { box-shadow: 0 0 0 0 rgba(10,117,71,.45); } 100% { box-shadow: 0 0 0 12px rgba(10,117,71,0); } }
+.map-controls button:hover, .zoom-controls button:hover, .layer-control button:hover { color: var(--ui-green-800); background: var(--ui-green-100); }
+
+/* About and process cards */
+.benefit-grid article:hover { transform: translateY(-4px); border-color: #c9d9cd !important; box-shadow: 0 10px 24px rgba(18,53,36,.12) !important; }
+.feature-icon, .workflow-icon { transition: color .2s ease, background-color .2s ease, transform .2s ease; }
+.benefit-grid article:hover .feature-icon { color: #fff; background: var(--ui-green-700); transform: translateY(-3px) scale(1.04); }
+.workflow article:hover .workflow-icon { color: #fff; background: var(--ui-green-700); transform: scale(1.07); }
+.partners article:hover { transform: translateX(4px); border-color: rgba(255,255,255,.5) !important; background: rgba(255,255,255,.14); box-shadow: 0 8px 20px rgba(0,35,22,.16) !important; }
+
+/* Footer and compact text links */
+footer a, .section-heading a { position: relative; text-decoration: none; }
+footer a::after, .section-heading a::after { content: ""; position: absolute; right: 0; bottom: -3px; left: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .18s ease; }
+footer a:hover::after, .section-heading a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+.hero-image-placeholder, .directory-hero .hero-image-placeholder, .about-hero .hero-image-placeholder {
+    background-color: #dce6df;
+    background-image: linear-gradient(125deg, rgba(255,255,255,.18), transparent 48%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (hover: none) {
+    .stats article:hover, .tree-card:hover, .benefit-grid article:hover, .partners article:hover { transform: none; }
+    .tree-card:hover .tree-image-placeholder, .tree-card:hover .tree-photo-placeholder { transform: none; }
+}

@@ -1,0 +1,2090 @@
+{
+  "headers": [
+    "Species",
+    "Easting",
+    "Northing",
+    "Height",
+    "Latitude",
+    "Longitude"
+  ],
+  "recordCount": 759,
+  "uniqueSpecies": 340,
+  "missingByColumn": {
+    "Species": 0,
+    "Easting": 0,
+    "Northing": 0,
+    "Height": 0,
+    "Latitude": 0,
+    "Longitude": 0
+  },
+  "latitude": {
+    "min": 1.64827391288,
+    "max": 16.5337509243
+  },
+  "longitude": {
+    "min": 118.604501191,
+    "max": 146.021027951
+  },
+  "height": {
+    "min": 0,
+    "max": 56,
+    "over60Rows": []
+  },
+  "zeroHeightRows": [
+    457,
+    493
+  ],
+  "withinOneKm": 736,
+  "invalidCoordinateRows": [
+    {
+      "row": 394,
+      "species": "Mahogany",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301735,
+      "northing": 18222829
+    },
+    {
+      "row": 395,
+      "species": "Mahogany",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301735,
+      "northing": 18222829
+    },
+    {
+      "row": 396,
+      "species": "Amugis",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301741,
+      "northing": 18222838
+    },
+    {
+      "row": 397,
+      "species": "Mahogany",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301744,
+      "northing": 18222838
+    },
+    {
+      "row": 398,
+      "species": "Mahogany",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301747,
+      "northing": 18222838
+    },
+    {
+      "row": 399,
+      "species": "Antipolo",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301745,
+      "northing": 18222838
+    },
+    {
+      "row": 400,
+      "species": "Mahogany",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301750,
+      "northing": 18222835
+    },
+    {
+      "row": 565,
+      "species": "Mahogany",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 0,
+      "northing": 0
+    },
+    {
+      "row": 634,
+      "species": "Narra 4",
+      "latitude": "#NUM!",
+      "longitude": "#NUM!",
+      "easting": 301397,
+      "northing": 18223240
+    }
+  ],
+  "coordinateDuplicateGroups": [
+    {
+      "coordinate": "16.48098932,121.14453959",
+      "rows": [
+        96,
+        97
+      ]
+    },
+    {
+      "coordinate": "16.48152083,121.14362539",
+      "rows": [
+        158,
+        160
+      ]
+    },
+    {
+      "coordinate": "16.47925468,121.14253326",
+      "rows": [
+        202,
+        204
+      ]
+    },
+    {
+      "coordinate": "16.47837671,121.14324236",
+      "rows": [
+        273,
+        274
+      ]
+    },
+    {
+      "coordinate": "16.47877723,121.14241031",
+      "rows": [
+        291,
+        292
+      ]
+    },
+    {
+      "coordinate": "16.47758284,121.14252442",
+      "rows": [
+        312,
+        313
+      ]
+    },
+    {
+      "coordinate": "16.47858865,121.14282993",
+      "rows": [
+        360,
+        361
+      ]
+    },
+    {
+      "coordinate": "16.47855177,121.14274599",
+      "rows": [
+        365,
+        366
+      ]
+    },
+    {
+      "coordinate": "16.47867734,121.14264178",
+      "rows": [
+        367,
+        368
+      ]
+    },
+    {
+      "coordinate": "16.47877160,121.14308104",
+      "rows": [
+        377,
+        378,
+        381
+      ]
+    },
+    {
+      "coordinate": "16.47874458,121.14309066",
+      "rows": [
+        379,
+        380
+      ]
+    },
+    {
+      "coordinate": "16.47880733,121.14303387",
+      "rows": [
+        384,
+        386,
+        387
+      ]
+    },
+    {
+      "coordinate": "16.47832275,121.14036011",
+      "rows": [
+        559,
+        560
+      ]
+    },
+    {
+      "coordinate": "16.48225932,121.13899267",
+      "rows": [
+        645,
+        646
+      ]
+    },
+    {
+      "coordinate": "16.48265358,121.13930394",
+      "rows": [
+        650,
+        651
+      ]
+    },
+    {
+      "coordinate": "16.48211636,121.13949135",
+      "rows": [
+        679,
+        680
+      ]
+    },
+    {
+      "coordinate": "16.48208856,121.13909732",
+      "rows": [
+        685,
+        686
+      ]
+    },
+    {
+      "coordinate": "16.48212512,121.13914380",
+      "rows": [
+        689,
+        691
+      ]
+    },
+    {
+      "coordinate": "16.48099612,121.13982501",
+      "rows": [
+        698,
+        699
+      ]
+    },
+    {
+      "coordinate": "16.48271041,121.13891344",
+      "rows": [
+        715,
+        716
+      ]
+    },
+    {
+      "coordinate": "16.48280026,121.13885639",
+      "rows": [
+        718,
+        719
+      ]
+    },
+    {
+      "coordinate": "16.48311214,121.13930786",
+      "rows": [
+        755,
+        756
+      ]
+    }
+  ],
+  "projectedCoordinateDuplicateGroups": [
+    {
+      "coordinate": "301934,1823051",
+      "rows": [
+        96,
+        97
+      ]
+    },
+    {
+      "coordinate": "301840,1823106",
+      "rows": [
+        158,
+        160
+      ]
+    },
+    {
+      "coordinate": "301718,1822861",
+      "rows": [
+        202,
+        204
+      ]
+    },
+    {
+      "coordinate": "301719,1822856",
+      "rows": [
+        211,
+        212
+      ]
+    },
+    {
+      "coordinate": "301801,1822758",
+      "rows": [
+        273,
+        274
+      ]
+    },
+    {
+      "coordinate": "301705,1822805",
+      "rows": [
+        291,
+        292
+      ]
+    },
+    {
+      "coordinate": "301717,1822678",
+      "rows": [
+        312,
+        313
+      ]
+    },
+    {
+      "coordinate": "301749,1822787",
+      "rows": [
+        360,
+        361
+      ]
+    },
+    {
+      "coordinate": "301740,1822783",
+      "rows": [
+        365,
+        366
+      ]
+    },
+    {
+      "coordinate": "301729,1822797",
+      "rows": [
+        367,
+        368
+      ]
+    },
+    {
+      "coordinate": "301776,1822807",
+      "rows": [
+        377,
+        378,
+        381
+      ]
+    },
+    {
+      "coordinate": "301777,1822804",
+      "rows": [
+        379,
+        380
+      ]
+    },
+    {
+      "coordinate": "301771,1822811",
+      "rows": [
+        384,
+        386,
+        387
+      ]
+    },
+    {
+      "coordinate": "301735,18222829",
+      "rows": [
+        394,
+        395
+      ]
+    },
+    {
+      "coordinate": "301643,1822720",
+      "rows": [
+        535,
+        536
+      ]
+    },
+    {
+      "coordinate": "301485,1822760",
+      "rows": [
+        559,
+        560
+      ]
+    },
+    {
+      "coordinate": "301343,1823197",
+      "rows": [
+        645,
+        646
+      ]
+    },
+    {
+      "coordinate": "301343,1823188",
+      "rows": [
+        650,
+        651
+      ]
+    },
+    {
+      "coordinate": "301367,1823149",
+      "rows": [
+        679,
+        680
+      ]
+    },
+    {
+      "coordinate": "301354,1823178",
+      "rows": [
+        685,
+        686
+      ]
+    },
+    {
+      "coordinate": "301359,1823182",
+      "rows": [
+        689,
+        691
+      ]
+    },
+    {
+      "coordinate": "301445,1823074",
+      "rows": [
+        698,
+        699
+      ]
+    },
+    {
+      "coordinate": "301335,1823247",
+      "rows": [
+        715,
+        716
+      ]
+    },
+    {
+      "coordinate": "301329,1823257",
+      "rows": [
+        718,
+        719
+      ]
+    },
+    {
+      "coordinate": "301385,1823317",
+      "rows": [
+        755,
+        756
+      ]
+    }
+  ],
+  "outlierRows": [
+    {
+      "row": 2,
+      "species": "Arbor Vitae",
+      "latitude": 16.5337509243,
+      "longitude": 121.144598163,
+      "distanceKm": 5.91,
+      "northing": 1828890,
+      "easting": 301994
+    },
+    {
+      "row": 101,
+      "species": "Mangga",
+      "latitude": 16.5079582185,
+      "longitude": 121.144141968,
+      "distanceKm": 3.05,
+      "northing": 1826036,
+      "easting": 301919
+    },
+    {
+      "row": 236,
+      "species": "Mahogany4",
+      "latitude": 1.64835473985,
+      "longitude": 121.217304516,
+      "distanceKm": 1649.3,
+      "northing": 182282,
+      "easting": 301680
+    },
+    {
+      "row": 277,
+      "species": "Niyog 4",
+      "latitude": 15.2410181576,
+      "longitude": 145.909327664,
+      "distanceKm": 2651.24,
+      "northing": 1822755,
+      "easting": 3018755
+    },
+    {
+      "row": 278,
+      "species": "Mahogany 17",
+      "latitude": 15.2289048228,
+      "longitude": 146.021027951,
+      "distanceKm": 2663.3,
+      "northing": 1822752,
+      "easting": 3031790
+    },
+    {
+      "row": 284,
+      "species": "Mahogany 22",
+      "latitude": 1.64827391288,
+      "longitude": 121.217924627,
+      "distanceKm": 1649.31,
+      "northing": 182273,
+      "easting": 301749
+    },
+    {
+      "row": 324,
+      "species": "Coconut4",
+      "latitude": 16.5009670607,
+      "longitude": 121.142410386,
+      "distanceKm": 2.26,
+      "northing": 1825264,
+      "easting": 301727
+    },
+    {
+      "row": 342,
+      "species": "Caimito",
+      "latitude": 15.2424154828,
+      "longitude": 145.884428425,
+      "distanceKm": 2648.56,
+      "northing": 1822602,
+      "easting": 3015868
+    },
+    {
+      "row": 374,
+      "species": "Kalubkob",
+      "latitude": 15.2422413821,
+      "longitude": 145.901899195,
+      "distanceKm": 2650.43,
+      "northing": 1822805,
+      "easting": 3017883
+    },
+    {
+      "row": 401,
+      "species": "Mahogany",
+      "latitude": 16.4587930454,
+      "longitude": 119.551796482,
+      "distanceKm": 169.45,
+      "northing": 1822828,
+      "easting": 131737
+    },
+    {
+      "row": 635,
+      "species": "Yemane 9",
+      "latitude": 16.4358240171,
+      "longitude": 118.604501191,
+      "distanceKm": 270.51,
+      "northing": 1822249,
+      "easting": 30362
+    },
+    {
+      "row": 720,
+      "species": "Yemane",
+      "latitude": 16.5005865321,
+      "longitude": 121.139248294,
+      "distanceKm": 2.22,
+      "northing": 1825225,
+      "easting": 301389
+    },
+    {
+      "row": 730,
+      "species": "Narra",
+      "latitude": 16.4633297641,
+      "longitude": 119.548301967,
+      "distanceKm": 169.82,
+      "northing": 1823337,
+      "easting": 131372
+    },
+    {
+      "row": 750,
+      "species": "Coconut",
+      "latitude": 15.2523413246,
+      "longitude": 145.846841619,
+      "distanceKm": 2644.44,
+      "northing": 1823299,
+      "easting": 3011408
+    }
+  ],
+  "speciesWithNumericSuffix": [
+    {
+      "row": 107,
+      "species": "Arbor Vitae1"
+    },
+    {
+      "row": 108,
+      "species": "Arbor Vitae2"
+    },
+    {
+      "row": 109,
+      "species": "Arbor Vitae3"
+    },
+    {
+      "row": 110,
+      "species": "Arbor Vitae4"
+    },
+    {
+      "row": 111,
+      "species": "Arbor Vitae5"
+    },
+    {
+      "row": 112,
+      "species": "Arbor Vitae6"
+    },
+    {
+      "row": 114,
+      "species": "Arbor Vitae7"
+    },
+    {
+      "row": 115,
+      "species": "Arbor Vitae8"
+    },
+    {
+      "row": 116,
+      "species": "Arbor Vitae9"
+    },
+    {
+      "row": 117,
+      "species": "Mahogany2"
+    },
+    {
+      "row": 118,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 119,
+      "species": "Mahogany4"
+    },
+    {
+      "row": 127,
+      "species": "Niyog 1"
+    },
+    {
+      "row": 128,
+      "species": "Niyog 2"
+    },
+    {
+      "row": 129,
+      "species": "Himbabao 2"
+    },
+    {
+      "row": 130,
+      "species": "Himbabao 3"
+    },
+    {
+      "row": 131,
+      "species": "Himbabao 4"
+    },
+    {
+      "row": 133,
+      "species": "Niyog 3"
+    },
+    {
+      "row": 136,
+      "species": "Niyog 1"
+    },
+    {
+      "row": 137,
+      "species": "Niyog 2"
+    },
+    {
+      "row": 138,
+      "species": "Niyog 3"
+    },
+    {
+      "row": 139,
+      "species": "Mulberry 1"
+    },
+    {
+      "row": 140,
+      "species": "Mulberry 2"
+    },
+    {
+      "row": 141,
+      "species": "Mulberry 3"
+    },
+    {
+      "row": 142,
+      "species": "Mulberry 4"
+    },
+    {
+      "row": 143,
+      "species": "Mulberry 5"
+    },
+    {
+      "row": 144,
+      "species": "Mulberry 6"
+    },
+    {
+      "row": 145,
+      "species": "Mulberry 7"
+    },
+    {
+      "row": 152,
+      "species": "Malunggai 1"
+    },
+    {
+      "row": 153,
+      "species": "Kakauate 1/ Malunggai 2"
+    },
+    {
+      "row": 154,
+      "species": "Kakauate 2/ Malunggai3"
+    },
+    {
+      "row": 155,
+      "species": "Kakauate 7/ Malunggai 6"
+    },
+    {
+      "row": 157,
+      "species": "Kakauate 8/ Malunggai 7"
+    },
+    {
+      "row": 158,
+      "species": "Kakauate 9/ Malunggai 8"
+    },
+    {
+      "row": 159,
+      "species": "Kakauate 10"
+    },
+    {
+      "row": 160,
+      "species": "Kakauate 13"
+    },
+    {
+      "row": 161,
+      "species": "Kakauate 14/ Malunggai 10"
+    },
+    {
+      "row": 162,
+      "species": "Kakauate 15"
+    },
+    {
+      "row": 163,
+      "species": "Malunggai 11"
+    },
+    {
+      "row": 164,
+      "species": "Malunggai 12"
+    },
+    {
+      "row": 165,
+      "species": "Kakauate 16/ Malunggai 13"
+    },
+    {
+      "row": 166,
+      "species": "Kakauate 23"
+    },
+    {
+      "row": 167,
+      "species": "Kakauate 24"
+    },
+    {
+      "row": 168,
+      "species": "Kakauate 25"
+    },
+    {
+      "row": 169,
+      "species": "Kakauate 26"
+    },
+    {
+      "row": 171,
+      "species": "Malunggai 16"
+    },
+    {
+      "row": 172,
+      "species": "Malunggai 17"
+    },
+    {
+      "row": 173,
+      "species": "Kakauate 27"
+    },
+    {
+      "row": 174,
+      "species": "Kakauate 28/ Malunggai 18"
+    },
+    {
+      "row": 175,
+      "species": "Malunggai 20"
+    },
+    {
+      "row": 176,
+      "species": "Kakauate 30"
+    },
+    {
+      "row": 177,
+      "species": "Kakauate 31"
+    },
+    {
+      "row": 178,
+      "species": "Kakauate 32"
+    },
+    {
+      "row": 179,
+      "species": "Malunggai 21"
+    },
+    {
+      "row": 180,
+      "species": "Kakauate 33/ Malunggai 22"
+    },
+    {
+      "row": 181,
+      "species": "Mangga6"
+    },
+    {
+      "row": 182,
+      "species": "Mangga7"
+    },
+    {
+      "row": 183,
+      "species": "Mangga9"
+    },
+    {
+      "row": 184,
+      "species": "Guyabano1"
+    },
+    {
+      "row": 185,
+      "species": "Rambutan1"
+    },
+    {
+      "row": 186,
+      "species": "Takipan2"
+    },
+    {
+      "row": 187,
+      "species": "Takipan3"
+    },
+    {
+      "row": 188,
+      "species": "Mangga13"
+    },
+    {
+      "row": 189,
+      "species": "Mangga14"
+    },
+    {
+      "row": 190,
+      "species": "Guyabano2"
+    },
+    {
+      "row": 191,
+      "species": "Coconut2"
+    },
+    {
+      "row": 192,
+      "species": "Coconut3"
+    },
+    {
+      "row": 193,
+      "species": "Narra2"
+    },
+    {
+      "row": 194,
+      "species": "Avocado1"
+    },
+    {
+      "row": 195,
+      "species": "Avocado2"
+    },
+    {
+      "row": 196,
+      "species": "Avocado3"
+    },
+    {
+      "row": 197,
+      "species": "Avocado4"
+    },
+    {
+      "row": 198,
+      "species": "Santol2"
+    },
+    {
+      "row": 199,
+      "species": "Mangga17"
+    },
+    {
+      "row": 200,
+      "species": "Neem Tree1"
+    },
+    {
+      "row": 201,
+      "species": "Narra3"
+    },
+    {
+      "row": 202,
+      "species": "Mahogany1"
+    },
+    {
+      "row": 203,
+      "species": "Banuyo1"
+    },
+    {
+      "row": 204,
+      "species": "Mahogany2"
+    },
+    {
+      "row": 205,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 206,
+      "species": "Mahogany4"
+    },
+    {
+      "row": 207,
+      "species": "Mahogany5"
+    },
+    {
+      "row": 208,
+      "species": "Mahogany6"
+    },
+    {
+      "row": 209,
+      "species": "Mahogany9"
+    },
+    {
+      "row": 210,
+      "species": "Nangka2"
+    },
+    {
+      "row": 211,
+      "species": "Teak2"
+    },
+    {
+      "row": 212,
+      "species": "Phil.Teak3"
+    },
+    {
+      "row": 213,
+      "species": "Teak4"
+    },
+    {
+      "row": 214,
+      "species": "Alim2"
+    },
+    {
+      "row": 215,
+      "species": "Teak5"
+    },
+    {
+      "row": 216,
+      "species": "Mahogany11"
+    },
+    {
+      "row": 218,
+      "species": "Mahogany1"
+    },
+    {
+      "row": 219,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 220,
+      "species": "Mahogany4"
+    },
+    {
+      "row": 221,
+      "species": "Mahogany5"
+    },
+    {
+      "row": 222,
+      "species": "Mahogany6"
+    },
+    {
+      "row": 223,
+      "species": "Mahogany7"
+    },
+    {
+      "row": 225,
+      "species": "Mahogany8"
+    },
+    {
+      "row": 226,
+      "species": "Takipan2"
+    },
+    {
+      "row": 227,
+      "species": "Manila Palm2"
+    },
+    {
+      "row": 228,
+      "species": "Manila Palm3"
+    },
+    {
+      "row": 229,
+      "species": "Takipan3"
+    },
+    {
+      "row": 230,
+      "species": "Takipan4"
+    },
+    {
+      "row": 231,
+      "species": "Mahogany1"
+    },
+    {
+      "row": 232,
+      "species": "Mahogany2"
+    },
+    {
+      "row": 233,
+      "species": "Mangga1"
+    },
+    {
+      "row": 235,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 236,
+      "species": "Mahogany4"
+    },
+    {
+      "row": 237,
+      "species": "Mahogany5"
+    },
+    {
+      "row": 238,
+      "species": "Mahogany6"
+    },
+    {
+      "row": 239,
+      "species": "Mangga2"
+    },
+    {
+      "row": 240,
+      "species": "Mangga3"
+    },
+    {
+      "row": 241,
+      "species": "Mahogany7"
+    },
+    {
+      "row": 242,
+      "species": "Mahogany8"
+    },
+    {
+      "row": 243,
+      "species": "Mahogany9"
+    },
+    {
+      "row": 244,
+      "species": "Mangga3"
+    },
+    {
+      "row": 245,
+      "species": "Mahogany10"
+    },
+    {
+      "row": 246,
+      "species": "Mahogany11"
+    },
+    {
+      "row": 247,
+      "species": "mangga4"
+    },
+    {
+      "row": 248,
+      "species": "Mahogany5"
+    },
+    {
+      "row": 249,
+      "species": "Mahogany6"
+    },
+    {
+      "row": 250,
+      "species": "Gmelina2"
+    },
+    {
+      "row": 251,
+      "species": "Gmelina3"
+    },
+    {
+      "row": 253,
+      "species": "Talisay1"
+    },
+    {
+      "row": 254,
+      "species": "Talisay2"
+    },
+    {
+      "row": 257,
+      "species": "Mahogany1"
+    },
+    {
+      "row": 259,
+      "species": "Mahogany2"
+    },
+    {
+      "row": 261,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 264,
+      "species": "Mahogany4"
+    },
+    {
+      "row": 265,
+      "species": "Mahogany5"
+    },
+    {
+      "row": 267,
+      "species": "Mahogany7"
+    },
+    {
+      "row": 268,
+      "species": "Mahogany8"
+    },
+    {
+      "row": 269,
+      "species": "Niyog 2"
+    },
+    {
+      "row": 270,
+      "species": "Mahogany 6"
+    },
+    {
+      "row": 271,
+      "species": "Mahogany 8"
+    },
+    {
+      "row": 272,
+      "species": "Mahogany 9"
+    },
+    {
+      "row": 273,
+      "species": "Niyog 3"
+    },
+    {
+      "row": 274,
+      "species": "Mahogany 10"
+    },
+    {
+      "row": 275,
+      "species": "Mahogany 11"
+    },
+    {
+      "row": 276,
+      "species": "Mangga 2"
+    },
+    {
+      "row": 277,
+      "species": "Niyog 4"
+    },
+    {
+      "row": 278,
+      "species": "Mahogany 17"
+    },
+    {
+      "row": 279,
+      "species": "Niyog 7"
+    },
+    {
+      "row": 280,
+      "species": "Rain Tree 3"
+    },
+    {
+      "row": 281,
+      "species": "Rain Tree 4"
+    },
+    {
+      "row": 283,
+      "species": "Mahogany 21"
+    },
+    {
+      "row": 284,
+      "species": "Mahogany 22"
+    },
+    {
+      "row": 285,
+      "species": "Mahogany 23"
+    },
+    {
+      "row": 286,
+      "species": "Mahogany 24"
+    },
+    {
+      "row": 287,
+      "species": "Mahogany 27"
+    },
+    {
+      "row": 288,
+      "species": "Mahogany 28"
+    },
+    {
+      "row": 289,
+      "species": "Mahogany 29"
+    },
+    {
+      "row": 290,
+      "species": "Mahogany 30"
+    },
+    {
+      "row": 291,
+      "species": "Mahogany 31"
+    },
+    {
+      "row": 292,
+      "species": "Mahogany 32"
+    },
+    {
+      "row": 293,
+      "species": "Mahogany 33"
+    },
+    {
+      "row": 294,
+      "species": "Neem tree2"
+    },
+    {
+      "row": 295,
+      "species": "Neem tree4"
+    },
+    {
+      "row": 296,
+      "species": "Himbabao1"
+    },
+    {
+      "row": 297,
+      "species": "Himbabao2"
+    },
+    {
+      "row": 299,
+      "species": "Himbabao3"
+    },
+    {
+      "row": 302,
+      "species": "Yemane1"
+    },
+    {
+      "row": 303,
+      "species": "Yemane2"
+    },
+    {
+      "row": 304,
+      "species": "Yemane3"
+    },
+    {
+      "row": 305,
+      "species": "Yemane4"
+    },
+    {
+      "row": 306,
+      "species": "Yemane5"
+    },
+    {
+      "row": 307,
+      "species": "Tulip1"
+    },
+    {
+      "row": 308,
+      "species": "Mahogany1"
+    },
+    {
+      "row": 309,
+      "species": "Neem tree1"
+    },
+    {
+      "row": 310,
+      "species": "Neem tree2"
+    },
+    {
+      "row": 311,
+      "species": "Neem tree3"
+    },
+    {
+      "row": 312,
+      "species": "Tulip2"
+    },
+    {
+      "row": 313,
+      "species": "Neem tree4"
+    },
+    {
+      "row": 314,
+      "species": "Tulip4"
+    },
+    {
+      "row": 315,
+      "species": "Mangga1"
+    },
+    {
+      "row": 316,
+      "species": "Coconut1"
+    },
+    {
+      "row": 317,
+      "species": "Coconut2"
+    },
+    {
+      "row": 318,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 321,
+      "species": "Coconut3"
+    },
+    {
+      "row": 323,
+      "species": "Mangga2"
+    },
+    {
+      "row": 324,
+      "species": "Coconut4"
+    },
+    {
+      "row": 326,
+      "species": "Mangga3"
+    },
+    {
+      "row": 327,
+      "species": "Mangga4"
+    },
+    {
+      "row": 329,
+      "species": "Coconut6"
+    },
+    {
+      "row": 330,
+      "species": "Coconut7"
+    },
+    {
+      "row": 332,
+      "species": "Mangga5"
+    },
+    {
+      "row": 334,
+      "species": "Coconut8"
+    },
+    {
+      "row": 337,
+      "species": "Mangga1"
+    },
+    {
+      "row": 338,
+      "species": "Mangga2"
+    },
+    {
+      "row": 340,
+      "species": "Mangga3"
+    },
+    {
+      "row": 344,
+      "species": "Caimito2"
+    },
+    {
+      "row": 345,
+      "species": "Caimito3"
+    },
+    {
+      "row": 346,
+      "species": "Caimito4"
+    },
+    {
+      "row": 347,
+      "species": "Molave 1"
+    },
+    {
+      "row": 348,
+      "species": "Molave 2"
+    },
+    {
+      "row": 349,
+      "species": "Salisi 1"
+    },
+    {
+      "row": 350,
+      "species": "Salisi 2"
+    },
+    {
+      "row": 351,
+      "species": "Salisi 3"
+    },
+    {
+      "row": 354,
+      "species": "Mahogany 1"
+    },
+    {
+      "row": 355,
+      "species": "Mahogany 2"
+    },
+    {
+      "row": 357,
+      "species": "Mangga 1"
+    },
+    {
+      "row": 358,
+      "species": "Manila Palm 6"
+    },
+    {
+      "row": 359,
+      "species": "Salisi 4"
+    },
+    {
+      "row": 360,
+      "species": "Salisi 5"
+    },
+    {
+      "row": 361,
+      "species": "Salisi 6"
+    },
+    {
+      "row": 362,
+      "species": "Salisi 7"
+    },
+    {
+      "row": 363,
+      "species": "Molave 2"
+    },
+    {
+      "row": 364,
+      "species": "Molave 3"
+    },
+    {
+      "row": 365,
+      "species": "Molave 4"
+    },
+    {
+      "row": 366,
+      "species": "Molave 5"
+    },
+    {
+      "row": 367,
+      "species": "Molave 6"
+    },
+    {
+      "row": 368,
+      "species": "Molave 7"
+    },
+    {
+      "row": 371,
+      "species": "Coconut 1"
+    },
+    {
+      "row": 372,
+      "species": "Coconut 2"
+    },
+    {
+      "row": 373,
+      "species": "Coconut 3"
+    },
+    {
+      "row": 375,
+      "species": "Mahogany 7"
+    },
+    {
+      "row": 376,
+      "species": "Mahogany 8"
+    },
+    {
+      "row": 379,
+      "species": "Mangga 5"
+    },
+    {
+      "row": 383,
+      "species": "Mahogany 9"
+    },
+    {
+      "row": 385,
+      "species": "Mangga 6"
+    },
+    {
+      "row": 386,
+      "species": "Mahogany 10"
+    },
+    {
+      "row": 388,
+      "species": "Mahogany 11"
+    },
+    {
+      "row": 389,
+      "species": "Mangga 7"
+    },
+    {
+      "row": 390,
+      "species": "Mangga 8"
+    },
+    {
+      "row": 391,
+      "species": "Mangga 9"
+    },
+    {
+      "row": 392,
+      "species": "Mangga 10"
+    },
+    {
+      "row": 418,
+      "species": "Mangga1"
+    },
+    {
+      "row": 419,
+      "species": "Mangga2"
+    },
+    {
+      "row": 420,
+      "species": "Mangga3"
+    },
+    {
+      "row": 421,
+      "species": "Indian lanutan1"
+    },
+    {
+      "row": 422,
+      "species": "Longgan2"
+    },
+    {
+      "row": 423,
+      "species": "Indian lanutan2"
+    },
+    {
+      "row": 424,
+      "species": "Indian lanutan3"
+    },
+    {
+      "row": 425,
+      "species": "Mangga4"
+    },
+    {
+      "row": 426,
+      "species": "Longgan3"
+    },
+    {
+      "row": 427,
+      "species": "Longgan4"
+    },
+    {
+      "row": 428,
+      "species": "Longgan5"
+    },
+    {
+      "row": 429,
+      "species": "Longgan6"
+    },
+    {
+      "row": 430,
+      "species": "Longgan7"
+    },
+    {
+      "row": 431,
+      "species": "Longgan8"
+    },
+    {
+      "row": 432,
+      "species": "Longgan9"
+    },
+    {
+      "row": 433,
+      "species": "Longgan10"
+    },
+    {
+      "row": 434,
+      "species": "Longgan11"
+    },
+    {
+      "row": 435,
+      "species": "Longgan12"
+    },
+    {
+      "row": 436,
+      "species": "Longgan13"
+    },
+    {
+      "row": 437,
+      "species": "Longgan14"
+    },
+    {
+      "row": 438,
+      "species": "Longgan15"
+    },
+    {
+      "row": 439,
+      "species": "Longgan16"
+    },
+    {
+      "row": 440,
+      "species": "Makopa1"
+    },
+    {
+      "row": 441,
+      "species": "Longgan17"
+    },
+    {
+      "row": 442,
+      "species": "Makopa2"
+    },
+    {
+      "row": 443,
+      "species": "Longgan18"
+    },
+    {
+      "row": 444,
+      "species": "Makopa3"
+    },
+    {
+      "row": 445,
+      "species": "Longgan19"
+    },
+    {
+      "row": 446,
+      "species": "Longgan20"
+    },
+    {
+      "row": 447,
+      "species": "Longgan21"
+    },
+    {
+      "row": 448,
+      "species": "Longgan22"
+    },
+    {
+      "row": 449,
+      "species": "Longgan23"
+    },
+    {
+      "row": 450,
+      "species": "Longgan24"
+    },
+    {
+      "row": 451,
+      "species": "Longgan25"
+    },
+    {
+      "row": 452,
+      "species": "Longgan26"
+    },
+    {
+      "row": 453,
+      "species": "Longgan27"
+    },
+    {
+      "row": 454,
+      "species": "Himbabao1"
+    },
+    {
+      "row": 455,
+      "species": "Himbabao2"
+    },
+    {
+      "row": 456,
+      "species": "Himbabao3"
+    },
+    {
+      "row": 458,
+      "species": "Himbabao4"
+    },
+    {
+      "row": 459,
+      "species": "Himbabao5"
+    },
+    {
+      "row": 460,
+      "species": "Himbabao6"
+    },
+    {
+      "row": 462,
+      "species": "Himbabao7"
+    },
+    {
+      "row": 464,
+      "species": "Mahogany1"
+    },
+    {
+      "row": 465,
+      "species": "Mahogany2"
+    },
+    {
+      "row": 466,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 467,
+      "species": "Mahogany4"
+    },
+    {
+      "row": 468,
+      "species": "Mahogany5"
+    },
+    {
+      "row": 469,
+      "species": "Mahogany6"
+    },
+    {
+      "row": 470,
+      "species": "Mahogany7"
+    },
+    {
+      "row": 471,
+      "species": "Mahogany8"
+    },
+    {
+      "row": 472,
+      "species": "Mahogany9"
+    },
+    {
+      "row": 473,
+      "species": "Mahogany10"
+    },
+    {
+      "row": 474,
+      "species": "Mahogany11"
+    },
+    {
+      "row": 475,
+      "species": "Mahogany12"
+    },
+    {
+      "row": 499,
+      "species": "Gmelina 1"
+    },
+    {
+      "row": 500,
+      "species": "Coconut 1"
+    },
+    {
+      "row": 501,
+      "species": "Gmelina 2"
+    },
+    {
+      "row": 502,
+      "species": "Gmelina 3"
+    },
+    {
+      "row": 503,
+      "species": "Coconut 2"
+    },
+    {
+      "row": 504,
+      "species": "Coconut 3"
+    },
+    {
+      "row": 505,
+      "species": "Coconut 4"
+    },
+    {
+      "row": 507,
+      "species": "Coconut 5"
+    },
+    {
+      "row": 510,
+      "species": "Coconut 6"
+    },
+    {
+      "row": 511,
+      "species": "Gmelina 4"
+    },
+    {
+      "row": 512,
+      "species": "Gmelina 5"
+    },
+    {
+      "row": 513,
+      "species": "Sampalok 1"
+    },
+    {
+      "row": 514,
+      "species": "Sampalok 2"
+    },
+    {
+      "row": 515,
+      "species": "Triangle Palm 1"
+    },
+    {
+      "row": 516,
+      "species": "Triangle Palm 2"
+    },
+    {
+      "row": 517,
+      "species": "Triangle Palm 3"
+    },
+    {
+      "row": 522,
+      "species": "Talisai 2"
+    },
+    {
+      "row": 524,
+      "species": "Bunga 2"
+    },
+    {
+      "row": 525,
+      "species": "Longgan 2"
+    },
+    {
+      "row": 530,
+      "species": "Sandbox 2"
+    },
+    {
+      "row": 531,
+      "species": "Coconut 7"
+    },
+    {
+      "row": 533,
+      "species": "Coconut 8"
+    },
+    {
+      "row": 534,
+      "species": "Mahogany1"
+    },
+    {
+      "row": 535,
+      "species": " Mahogany2"
+    },
+    {
+      "row": 536,
+      "species": "Mahogany3"
+    },
+    {
+      "row": 537,
+      "species": "Mahonany4"
+    },
+    {
+      "row": 538,
+      "species": "Mangga 2"
+    },
+    {
+      "row": 539,
+      "species": "Kamias 2"
+    },
+    {
+      "row": 542,
+      "species": "Coconut 8"
+    },
+    {
+      "row": 544,
+      "species": "Gmelina 6"
+    },
+    {
+      "row": 545,
+      "species": "Mangga1"
+    },
+    {
+      "row": 547,
+      "species": "Mangga2"
+    },
+    {
+      "row": 548,
+      "species": "Bunga1"
+    },
+    {
+      "row": 549,
+      "species": "Bunga2"
+    },
+    {
+      "row": 550,
+      "species": "Bunga3"
+    },
+    {
+      "row": 553,
+      "species": "Bunga4"
+    },
+    {
+      "row": 554,
+      "species": "Bunga5"
+    },
+    {
+      "row": 555,
+      "species": "Bunga6"
+    },
+    {
+      "row": 556,
+      "species": "Bunga7"
+    },
+    {
+      "row": 557,
+      "species": "Bunga8"
+    },
+    {
+      "row": 605,
+      "species": "Yemane1"
+    },
+    {
+      "row": 606,
+      "species": "Yemane2"
+    },
+    {
+      "row": 607,
+      "species": "Ipil-ipil1"
+    },
+    {
+      "row": 608,
+      "species": "Ipil-ipil2"
+    },
+    {
+      "row": 612,
+      "species": "Yamane3"
+    },
+    {
+      "row": 613,
+      "species": "Ipil-ipil3"
+    },
+    {
+      "row": 614,
+      "species": "Ipil-ipil4"
+    },
+    {
+      "row": 617,
+      "species": "Mangga1"
+    },
+    {
+      "row": 618,
+      "species": "Rambutan1"
+    },
+    {
+      "row": 621,
+      "species": "Rambutan2"
+    },
+    {
+      "row": 622,
+      "species": "Mangga4"
+    },
+    {
+      "row": 623,
+      "species": "Guava2"
+    },
+    {
+      "row": 624,
+      "species": "Nangka2"
+    },
+    {
+      "row": 626,
+      "species": "Mangga5"
+    },
+    {
+      "row": 627,
+      "species": "Mangga6"
+    },
+    {
+      "row": 631,
+      "species": "Mangga7"
+    },
+    {
+      "row": 633,
+      "species": "Guava3"
+    },
+    {
+      "row": 634,
+      "species": "Narra 4"
+    },
+    {
+      "row": 635,
+      "species": "Yemane 9"
+    },
+    {
+      "row": 703,
+      "species": "Antsoan 2"
+    },
+    {
+      "row": 709,
+      "species": "Mangga 2"
+    },
+    {
+      "row": 710,
+      "species": "Mangga 3"
+    },
+    {
+      "row": 711,
+      "species": "Mangga 4"
+    },
+    {
+      "row": 712,
+      "species": "Mahogany 2"
+    },
+    {
+      "row": 713,
+      "species": "Mangga 5"
+    },
+    {
+      "row": 714,
+      "species": "Mangga 6"
+    },
+    {
+      "row": 715,
+      "species": "Mangga 7"
+    },
+    {
+      "row": 716,
+      "species": "Manila palm 1"
+    },
+    {
+      "row": 717,
+      "species": "Manila palm 2"
+    },
+    {
+      "row": 718,
+      "species": "Manila palm 3"
+    },
+    {
+      "row": 719,
+      "species": "Manila palm 4"
+    }
+  ],
+  "normalizedUniqueSpecies": 101,
+  "topSpecies": [
+    {
+      "species": "Mangga",
+      "count": 68
+    },
+    {
+      "species": "Coconut",
+      "count": 42
+    },
+    {
+      "species": "Mahogany",
+      "count": 35
+    },
+    {
+      "species": "Manila Palm",
+      "count": 16
+    },
+    {
+      "species": "Rambutan",
+      "count": 15
+    },
+    {
+      "species": "Gmelina",
+      "count": 15
+    },
+    {
+      "species": "Rain tree",
+      "count": 14
+    },
+    {
+      "species": "Lucban",
+      "count": 10
+    },
+    {
+      "species": "Kamias",
+      "count": 9
+    },
+    {
+      "species": "Nangka",
+      "count": 8
+    },
+    {
+      "species": "Lansones",
+      "count": 8
+    },
+    {
+      "species": "Mahogany3",
+      "count": 8
+    },
+    {
+      "species": "Alim",
+      "count": 8
+    },
+    {
+      "species": "Himbabao",
+      "count": 7
+    },
+    {
+      "species": "Yemane",
+      "count": 7
+    },
+    {
+      "species": "Mahogany1",
+      "count": 7
+    },
+    {
+      "species": "Narra",
+      "count": 7
+    },
+    {
+      "species": "Santol",
+      "count": 7
+    },
+    {
+      "species": "Durian",
+      "count": 6
+    },
+    {
+      "species": "Mahogany2",
+      "count": 6
+    },
+    {
+      "species": "Mahogany4",
+      "count": 6
+    },
+    {
+      "species": "Kakauate",
+      "count": 6
+    },
+    {
+      "species": "Mahogany5",
+      "count": 6
+    },
+    {
+      "species": "Mangga1",
+      "count": 6
+    },
+    {
+      "species": "Longgan",
+      "count": 5
+    }
+  ]
+}

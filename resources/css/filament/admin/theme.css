@@ -1,0 +1,107 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+.nvsu-filament-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    height: 100%;
+    min-width: 0;
+}
+
+.nvsu-filament-brand-logo {
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: none;
+    border-radius: 9999px;
+    object-fit: contain;
+}
+
+.nvsu-filament-brand-copy {
+    min-width: 0;
+}
+
+.nvsu-filament-brand-title,
+.nvsu-filament-brand-subtitle {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nvsu-filament-brand-title {
+    color: #17251f;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.nvsu-filament-brand-subtitle {
+    margin-top: 0.125rem;
+    color: #607067;
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.dark .nvsu-filament-brand-title {
+    color: #ffffff;
+}
+
+.dark .nvsu-filament-brand-subtitle {
+    color: #a3b4aa;
+}
+
+.fi-sidebar {
+    border-inline-end: 1px solid #b8d5c2;
+    background: linear-gradient(180deg, #f5faf6 0%, #ebf5ee 100%);
+    box-shadow: 8px 0 24px rgb(19 78 48 / 0.08);
+}
+
+.fi-sidebar-header {
+    border-bottom: 1px solid #c9e0d1;
+    background: rgb(255 255 255 / 0.72);
+    backdrop-filter: blur(12px);
+}
+
+.fi-sidebar-item-btn {
+    border: 1px solid transparent;
+    transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.fi-sidebar-item:not(.fi-active) > .fi-sidebar-item-btn:hover {
+    border-color: #cee3d5;
+    background: rgb(255 255 255 / 0.75);
+}
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn {
+    border-color: #9fc8ad;
+    background: #dcefe2;
+    box-shadow: inset 3px 0 #059669, 0 4px 12px rgb(19 78 48 / 0.08);
+}
+
+.dark .fi-sidebar {
+    border-inline-end-color: #315b43;
+    background: linear-gradient(180deg, #13271c 0%, #102219 100%);
+    box-shadow: 8px 0 24px rgb(0 0 0 / 0.24);
+}
+
+.dark .fi-sidebar-header {
+    border-bottom-color: #315b43;
+    background: rgb(16 34 25 / 0.82);
+}
+
+.dark .fi-sidebar-item:not(.fi-active) > .fi-sidebar-item-btn:hover {
+    border-color: #315b43;
+    background: rgb(49 91 67 / 0.32);
+}
+
+.dark .fi-sidebar-item.fi-active > .fi-sidebar-item-btn {
+    border-color: #3f7655;
+    background: #214b33;
+    box-shadow: inset 3px 0 #34d399, 0 4px 12px rgb(0 0 0 / 0.2);
+}

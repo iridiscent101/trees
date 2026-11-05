@@ -1,0 +1,132 @@
+:root {
+    --green-950: #052f22;
+    --green-900: #064b35;
+    --green-800: #08613f;
+    --green-700: #0c7548;
+    --green-100: #eaf4ea;
+    --text: #1f2937;
+    --muted: #536071;
+    --line: #d5dde4;
+    --white: #fff;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #fbfcfb; }
+button, input { font: inherit; }
+a { color: inherit; }
+
+.login-page {
+    display: grid;
+    grid-template-columns: minmax(440px, 1fr) minmax(520px, 1.02fr);
+    min-height: calc(100vh - 116px);
+    padding: 18px 20px 0;
+}
+
+.intro-panel { position: relative; min-height: 740px; overflow: hidden; border-radius: 24px 0 0 24px; background: #dfe7e1; color: #fff; }
+.campus-image-placeholder { position: absolute; inset: 0; background: #dfe7e1; }
+.intro-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,39,26,.96), rgba(1,49,30,.83) 50%, rgba(2,41,27,.45)); }
+.intro-content { position: relative; z-index: 1; display: flex; flex-direction: column; height: 100%; padding: 44px 54px; }
+.university-brand { display: flex; align-items: center; gap: 18px; }
+.university-logo { display: block; width: 94px; height: 94px; flex: none; object-fit: contain; }
+.university-brand p { margin: 0; font-size: 23px; font-weight: 750; line-height: 1.23; text-transform: uppercase; }
+.intro-copy { margin-top: 70px; max-width: 510px; }
+.intro-copy h2 { margin: 0 0 18px; font-size: clamp(31px, 2.25vw, 43px); line-height: 1.18; letter-spacing: .01em; text-transform: uppercase; }
+.intro-copy > p { max-width: 475px; margin: 0; font-size: 18px; line-height: 1.55; }
+.intro-copy::after { content: ""; display: block; width: 400px; max-width: 84%; height: 3px; margin-top: 30px; background: linear-gradient(90deg, #138558, transparent); }
+.feature-list { display: grid; gap: 28px; margin-top: 40px; }
+.feature-item { display: flex; align-items: center; gap: 18px; }
+.feature-icon { display: grid; place-items: center; width: 62px; height: 62px; flex: none; border: 2px solid #16845b; border-radius: 11px; }
+.feature-icon svg { width: 38px; height: 38px; fill: none; stroke: #fff; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.feature-item h2 { margin: 0 0 4px; font-size: 18px; }
+.feature-item p { max-width: 390px; margin: 0; font-size: 15px; line-height: 1.45; }
+
+.form-panel { position: relative; display: grid; place-items: center; overflow: hidden; min-height: 740px; border-radius: 0 24px 24px 0; background: #f8faf8; padding: 50px; }
+.form-panel::before, .form-panel::after { content: ""; position: absolute; width: 290px; height: 330px; opacity: .55; background: radial-gradient(ellipse at center, #dcebdc 0 25%, transparent 27%); transform: rotate(-25deg); }
+.form-panel::before { top: -130px; right: -70px; }
+.form-panel::after { right: -90px; bottom: -145px; }
+.login-card { position: relative; z-index: 1; width: min(100%, 520px); border-radius: 20px; background: rgba(255,255,255,.96); padding: 42px 44px 30px; box-shadow: 0 14px 38px rgba(30,55,43,.09); }
+.tree-mark { width: 92px; height: 92px; margin: 0 auto 12px; }
+.tree-mark img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: contain; }
+.card-heading { text-align: center; }
+.card-heading h1 { margin: 0; font-size: 29px; }
+.card-heading p { margin: 8px 0 26px; color: var(--muted); font-size: 16px; line-height: 1.45; }
+.form-alert { margin: -8px 0 20px; border: 1px solid #efb5b5; border-radius: 7px; color: #8d2525; background: #fff1f1; padding: 11px 14px; font-size: 14px; line-height: 1.4; }
+.login-form { display: grid; gap: 22px; }
+.field-group label { display: block; margin-bottom: 8px; font-weight: 650; }
+.input-wrap { position: relative; display: flex; align-items: center; }
+.input-wrap > svg { position: absolute; left: 16px; width: 20px; fill: none; stroke: #697586; stroke-width: 1.7; stroke-linecap: round; }
+.input-wrap input { width: 100%; height: 52px; border: 1px solid var(--line); border-radius: 7px; outline: none; padding: 0 50px; color: var(--text); background: #fff; transition: border .2s, box-shadow .2s; }
+.input-wrap input:focus { border-color: var(--green-700); box-shadow: 0 0 0 3px rgba(12,117,72,.12); }
+.password-toggle { position: absolute; right: 6px; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; color: #526071; background: transparent; cursor: pointer; }
+.password-toggle svg { width: 21px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.form-options { display: flex; justify-content: space-between; align-items: center; margin-top: -3px; font-size: 14px; }
+.remember { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.remember input { width: 24px; height: 24px; accent-color: var(--green-800); }
+.form-options a { color: var(--green-800); text-decoration: none; }
+.primary-button, .network-button { display: flex; align-items: center; justify-content: center; gap: 11px; width: 100%; min-height: 51px; border-radius: 7px; font-weight: 650; cursor: pointer; }
+.primary-button { border: 0; color: #fff; background: linear-gradient(90deg, var(--green-800), #097448); font-size: 17px; }
+.primary-button:hover { background: var(--green-900); }
+.primary-button svg, .network-button svg { width: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.separator { display: flex; align-items: center; gap: 18px; margin: -2px 0; color: #657181; font-size: 14px; }
+.separator::before, .separator::after { content: ""; height: 1px; flex: 1; background: #e1e5e8; }
+.network-button { border: 1px solid var(--line); color: #243043; background: #fff; }
+.network-button:hover { border-color: var(--green-700); color: var(--green-800); }
+.authorized-note { margin: 30px 0 0; text-align: center; color: #536071; font-size: 14px; }
+
+.security-strip { display: grid; grid-template-columns: 1.2fr 1.8fr .9fr; align-items: center; min-height: 98px; margin: 28px 20px 18px; border: 1px solid #dfe8df; border-radius: 17px; color: #174d36; background: #f5f8f5; padding: 18px 40px; font-size: 14px; }
+.security-item { display: flex; align-items: center; gap: 15px; line-height: 1.45; }
+.security-item svg { width: 24px; flex: none; fill: none; stroke: var(--green-800); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.security-strip nav { display: flex; justify-content: space-evenly; border-inline: 1px solid #dbe4dc; }
+.security-strip nav a { text-decoration: none; padding: 4px 14px; }
+.security-strip nav a:hover { text-decoration: underline; }
+.audit-message { justify-self: end; }
+
+@media (max-width: 1000px) {
+    .login-page { grid-template-columns: 1fr; padding: 0; }
+    .intro-panel { min-height: auto; border-radius: 0; }
+    .intro-content { padding: 32px; }
+    .intro-copy { margin-top: 45px; }
+    .feature-list { grid-template-columns: repeat(3, 1fr); }
+    .feature-item { align-items: flex-start; }
+    .feature-item p { display: none; }
+    .form-panel { min-height: auto; border-radius: 0; padding: 60px 24px; }
+    .security-strip { grid-template-columns: 1fr; gap: 22px; }
+    .security-strip nav { order: 3; border: 0; justify-content: flex-start; gap: 20px; }
+    .audit-message { justify-self: start; }
+}
+
+@media (max-width: 640px) {
+    .university-brand p { font-size: 17px; }
+    .university-logo { width: 68px; height: 68px; }
+    .intro-copy { margin-top: 38px; }
+    .intro-copy h2 { font-size: 29px; }
+    .intro-copy > p { font-size: 16px; }
+    .feature-list { grid-template-columns: 1fr; gap: 16px; }
+    .feature-item p { display: block; }
+    .login-card { padding: 32px 20px 25px; }
+    .form-panel { padding-inline: 14px; }
+    .security-strip { margin: 16px 10px; padding: 24px; }
+    .security-strip nav { flex-direction: column; gap: 10px; }
+}
+
+@media (max-width: 640px) {
+    .intro-panel { min-height: 108px; }
+    .intro-content { justify-content: center; min-height: 108px; padding: 16px 22px; }
+    .university-brand { gap: 13px; }
+    .university-logo { width: 58px; height: 58px; }
+    .university-brand p { font-size: 15px; }
+    .intro-copy, .feature-list { display: none; }
+    .form-panel { padding: 26px 12px 34px; }
+    .login-card { padding: 28px 20px 24px; }
+    .tree-mark { width: 72px; height: 72px; }
+    .card-heading h1 { font-size: 27px; }
+    .card-heading p { margin-bottom: 22px; font-size: 15px; }
+    .input-wrap input { height: 54px; }
+    .form-options a { min-height: 44px; display: flex; align-items: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; transition: none !important; }
+}
