@@ -30,6 +30,9 @@ class TreeQrCodeManagementTest extends TestCase
 
     public function test_authorized_user_can_generate_regenerate_and_download_tree_qr_code(): void
     {
+        config()->set('app.url', 'https://trees.example.test');
+        url()->forceRootUrl('https://preview.example.test');
+
         $administrator = User::factory()->create();
         $administrator->assignRole(RoleName::Administrator->value);
         $tree = Tree::factory()->verified()->create(['tree_code' => 'T-1001']);
@@ -40,7 +43,7 @@ class TreeQrCodeManagementTest extends TestCase
         $this->assertSame(1, $qrCode->version);
         $this->assertSame('active', $qrCode->status);
         Storage::disk('local')->assertExists($qrCode->storage_path);
-        $this->assertStringContainsString('/trees/T-1001', $qrCode->public_url);
+        $this->assertSame('https://trees.example.test/trees/T-1001', $qrCode->public_url);
 
         $originalPath = $qrCode->storage_path;
         $qrCode = app(GenerateTreeQrCode::class)->handle($tree->refresh(), $administrator);

@@ -26,7 +26,7 @@ class GenerateTreeQrCode
         $version = $existingQrCode?->storage_path
             ? $existingQrCode->version + 1
             : max(1, $existingQrCode?->version ?? 1);
-        $publicUrl = route('trees.show', $tree->tree_code);
+        $publicUrl = rtrim(config('app.url'), '/').route('trees.show', $tree->tree_code, false);
         $storagePath = "tree-qr-codes/{$tree->tree_code}-v{$version}.svg";
         $svg = (new QRCode(new QROptions([
             'outputInterface' => QRMarkupSVG::class,
