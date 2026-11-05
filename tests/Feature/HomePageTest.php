@@ -44,6 +44,18 @@ class HomePageTest extends TestCase
             ->assertDontSee('css/home.css', false);
     }
 
+    public function test_home_page_uses_https_assets_behind_a_proxy(): void
+    {
+        $this->withServerVariables([
+            'HTTP_X_FORWARDED_HOST' => 'untrusted.example.test',
+            'HTTP_X_FORWARDED_PROTO' => 'https',
+            'REMOTE_ADDR' => '10.0.0.1',
+        ])->get('http://trees.example.test/')
+            ->assertOk()
+            ->assertSee('https://trees.example.test/build/assets/app-', false)
+            ->assertSee('https://trees.example.test/images/tree.png', false);
+    }
+
     public function test_about_page_uses_live_inventory_statistics(): void
     {
         $this->seed(DatabaseSeeder::class);
